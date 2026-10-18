@@ -6,7 +6,7 @@
 > Status: Ready for Phase 1 implementation.
 
 ### Changes in 1.5 (18 Oct 2026)
-- Public repository `post-pulse`, licence AGPL-3.0 (§14). The real-export tests and their expected values move to `docs/data/tests/` (gitignored, §11.4); examples in this spec use synthetic URLs and titles. The live example `lipulse.netlify.app` keeps building from the archived private repository (§10.4).
+- Public repository `post-pulse`, licence PolyForm Noncommercial 1.0.0: free for personal and noncommercial use, no commercial use (§14). The real-export tests and their expected values move to `docs/data/tests/` (gitignored, §11.4); examples in this spec use synthetic URLs and titles. The live example `lipulse.netlify.app` keeps building from the archived private repository (§10.4).
 
 ### Changes in 1.4 (17 Oct 2026)
 - Share carousel: **no slide is ever left out**, bad news included (a falling reach shows that the feed is changing). Neutral wording, no claimed causes. A checkbox per slide lets the user leave pages out of the PDF (§9.2 screen 8, TC-SC01–SC09).
@@ -750,7 +750,7 @@ Review notes from a product-management and software-design perspective. These de
 |---|---|---|
 | Hosting | **Decided** (16 Oct 2026) | Netlify via Git integration |
 | Repository name | **Decided** (18 Oct 2026) | Public repository `post-pulse`; the earlier private repository `linkedin-pulse` is archived and still builds the live example |
-| Repository visibility & licence | **Decided** (18 Oct 2026) | Public repository, GNU AGPL-3.0-or-later |
+| Repository visibility & licence | **Decided** (18 Oct 2026) | Public repository, PolyForm Noncommercial 1.0.0 (source available, no commercial use); chosen instead of AGPL-3.0 on the same day |
 | Real test data location | **Decided** (16 Oct 2026) | `docs/data/`, gitignored |
 | Product name & domain | Open (default "Post Pulse") | any neutral name without "LinkedIn"; change before Phase 2 launch |
 | Business model | Open (default free, open core) | Free core + paid Pro (Phase 3 AI coach) |

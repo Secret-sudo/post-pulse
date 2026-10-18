@@ -130,4 +130,4 @@ node scripts/check-deploy-headers.ts https://your-site.netlify.app
 CI (GitHub Actions) runs typecheck, lint, format, unit tests with coverage, build, bundle size, end-to-end tests (including axe accessibility checks in light and dark) and Lighthouse on every pull request. `main` only takes green CI.
 
 ## Licence
-[GNU Affero General Public License v3.0 or later](LICENSE). You may use, change and share Post Pulse; if you run a changed version for others, for example as a website, you must publish your changes under the same licence.
+[PolyForm Noncommercial 1.0.0](LICENSE). You may use, change and share Post Pulse for any noncommercial purpose: personal use, study, hobby projects, and use by charities, schools, research and public bodies. Commercial use is not allowed. Post Pulse is source available, not open source.
