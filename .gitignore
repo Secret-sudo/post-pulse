@@ -1,0 +1,24 @@
+# Real LinkedIn exports contain personal data: never commit them (SPEC §10.2)
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+!fixtures/synthetic/**
+fixtures/private/
+docs/data/
+~$*
+
+# OS / editor
+.DS_Store
+
+# Build and test output
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Local Claude Code settings
+.claude/
+.lighthouseci/
