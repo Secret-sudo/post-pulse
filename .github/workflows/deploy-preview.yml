@@ -1,0 +1,26 @@
+name: Deploy preview
+
+# Netlify reports each deploy to GitHub as a deployment status. This runs
+# TC-S07 against it as soon as Netlify is connected; until then it never fires.
+on: deployment_status
+
+permissions:
+  contents: read
+
+jobs:
+  headers:
+    name: TC-S07 deploy preview headers
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Check security headers
+        env:
+          DEPLOY_URL: ${{ github.event.deployment_status.environment_url || github.event.deployment_status.target_url }}
+        run: node scripts/check-deploy-headers.ts "$DEPLOY_URL"
