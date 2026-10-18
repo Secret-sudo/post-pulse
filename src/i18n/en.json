@@ -1,0 +1,399 @@
+{
+  "app": {
+    "name": "Post Pulse",
+    "tagline": "for your LinkedIn analytics export",
+    "footer": "Not affiliated with LinkedIn Corporation.",
+    "import": "Import export",
+    "skipToContent": "Skip to content",
+    "beta": "Beta",
+    "betaHint": "Beta version: analyses your post performance only.",
+    "betaNote": "Beta version. Post Pulse analyses your post performance export only, not followers, profile visitors or audience data."
+  },
+  "welcome": {
+    "title": "See what works in your LinkedIn analytics export",
+    "promise": "Your data never leaves your device. No account, no upload, no tracking.",
+    "importButton": "Import LinkedIn export",
+    "dropHint": "or drop the .xlsx file here",
+    "dropActive": "Drop the file to import it",
+    "sampleButton": "Try with sample data",
+    "sampleHint": "Made-up posts, so you can look around first.",
+    "howTo": {
+      "summary": "How to export from LinkedIn",
+      "step1": "On LinkedIn in your web browser, open your Post impressions stats on the home page.",
+      "step1Alt": "LinkedIn home page with Post impressions marked in the left column",
+      "step2": "Under “Most recent post performance”, choose Show all posts.",
+      "step2Alt": "The Most recent post performance section with Show all posts marked",
+      "step3": "At the bottom of the page, choose Load more again and again until all your posts are loaded.",
+      "step3Alt": "The bottom of the post list with Load more marked",
+      "step4": "Choose Export at the top of the page.",
+      "step4Alt": "The top of the post list with Export marked",
+      "after": "Then import the downloaded .xlsx file here. Nothing is uploaded.",
+      "redacted": "Personal details in the screenshots are blurred."
+    },
+    "restoreHint": "Have a backup? Restore it here."
+  },
+  "import": {
+    "stage": {
+      "reading": "Reading {{file}}…",
+      "parsing": "Reading your posts…",
+      "saving": "Saving to this browser…"
+    },
+    "summary": {
+      "title": "Import complete",
+      "new": "New posts",
+      "updated": "Updated",
+      "unchanged": "Unchanged",
+      "range": "Export range: {{start}} to {{end}}",
+      "rangeEndOnly": "Export up to {{end}}",
+      "warnings_one": "{{count}} warning",
+      "warnings_other": "{{count}} warnings",
+      "replacedSample": "The sample data was removed so your own posts stand on their own.",
+      "backupTitle": "Keep a backup",
+      "backupText": "Your data lives only in this browser. Clearing site data deletes it. Download a backup now and then.",
+      "backupButton": "Download backup",
+      "done": "Show dashboard"
+    },
+    "already": "Already imported: {{file}} is in your history.",
+    "cancelled": "Import cancelled. Nothing was changed.",
+    "otherAuthor": {
+      "title": "This file seems to be from another profile",
+      "text": "Your history has posts from {{existing}}, but this file has posts from {{incoming}}.",
+      "importAnyway": "Import anyway",
+      "cancel": "Cancel"
+    },
+    "error": {
+      "title": {
+        "unsupported-type": "This isn't an .xlsx file",
+        "macro-enabled": "Macro-enabled files aren't accepted",
+        "csv-not-supported": "CSV files aren't supported yet",
+        "too-large": "This file is too large",
+        "password-protected": "This file is password-protected",
+        "not-xlsx": "This file can't be opened",
+        "unknown-headers": "We don't recognise this export",
+        "empty": "This export is empty"
+      },
+      "headersFound": "Columns found in the file",
+      "copyDetails": "Copy details",
+      "copied": "Details copied",
+      "close": "Close",
+      "unexpected": "Something went wrong while importing. Nothing was changed."
+    }
+  },
+  "sample": {
+    "banner": "You're looking at sample data, not your own posts.",
+    "remove": "Remove sample data",
+    "removed": "Sample data removed.",
+    "failed": "Sample data couldn't be loaded. {{reason}}"
+  },
+  "overview": {
+    "posts_one": "{{formatted}} post",
+    "posts_other": "{{formatted}} posts",
+    "history": "{{start}} to {{end}}",
+    "insightsTitle": "What stands out",
+    "noInsights": "Nothing stands out yet. Import more posts to see trends.",
+    "suggestion": "Try this:",
+    "takeaway": "In short:",
+    "kpiTitle": "Key numbers",
+    "bestTitle": "Best post per window",
+    "bestEmpty": "No posts in this window.",
+    "impressions_one": "{{formatted}} impression",
+    "impressions_other": "{{formatted}} impressions",
+    "filtered": "Showing {{shown}} of {{total}} posts.",
+    "openOnLinkedIn": "Open on LinkedIn (new tab)",
+    "insightsIntro": "The points that matter most right now, from your own numbers. They show what tended to go together, not what caused what.",
+    "showAll_one": "Show {{count}} more",
+    "showAll_other": "Show {{count}} more",
+    "showFewer": "Show fewer"
+  },
+  "nav": {
+    "label": "Dashboard sections",
+    "overview": "Overview",
+    "posts": "Posts",
+    "timeline": "Timeline",
+    "breakdowns": "Breakdowns",
+    "settings": "Settings"
+  },
+  "filters": {
+    "window": "Time window",
+    "windowLatest": "Last {{days}} days",
+    "windowPrior": "Previous {{days}} days",
+    "types": "Post types",
+    "growing": "Include growing posts",
+    "growingHint": "Posts published in the last 7 days are still collecting impressions, so they look weaker than they will end up. They're left out of medians and comparisons unless you include them here (Settings sets the default).",
+    "hashtags": "Hashtag openers only",
+    "clear": "Clear filters",
+    "label": "Filters",
+    "size": "Window length",
+    "sizeDays": "{{days}} days",
+    "sizeAll": "All time",
+    "olderWindows": "Earlier windows…",
+    "explain": "Your history is cut into blocks of {{days}} days, counted back from your latest export ({{date}}). Key numbers compare the selected block with the one just before it.",
+    "explainAll": "One window over your whole history ({{start}} to {{end}}), so there's nothing earlier to compare with.",
+    "options": "Options",
+    "growingWhat": "What are growing posts?"
+  },
+  "kpi": {
+    "noPrior": "No earlier window",
+    "sample_one": "{{count}} post",
+    "sample_other": "{{count}} posts",
+    "sampleVs_one": "{{count}} post vs {{prior}}",
+    "sampleVs_other": "{{count}} posts vs {{prior}}",
+    "medianImpressions": {
+      "label": "Median impressions",
+      "definition": "The middle value of impressions per post in this window. Medians aren't thrown off by one viral post."
+    },
+    "medianReach": {
+      "label": "Median reach",
+      "definition": "The middle value of members reached per post: unique people who saw it."
+    },
+    "breakouts": {
+      "label": "Breakout posts",
+      "definition": "Posts with at least {{multiplier}}× your median impressions over your whole history ({{threshold}}+ impressions)."
+    },
+    "comments": {
+      "label": "Comments",
+      "definition": "All comments on posts published in this window."
+    },
+    "followersGained": {
+      "label": "Followers gained",
+      "definition": "Followers LinkedIn attributes to posts published in this window."
+    },
+    "engagementRate": {
+      "label": "Engagement rate",
+      "definition": "Median of (reactions + comments + reposts + saves + sends) ÷ impressions."
+    },
+    "sparkPoint_one": "{{dates}}: {{value}} ({{count}} post)",
+    "sparkPoint_other": "{{dates}}: {{value}} ({{count}} posts)",
+    "sparkLabel": "{{label}} over the selected window: {{points}}"
+  },
+  "status": {
+    "growing": "Growing",
+    "flat": "Flat",
+    "slipping": "Slipping",
+    "down-sharply": "Down sharply"
+  },
+  "severity": {
+    "critical": "Critical",
+    "warning": "Worth a look",
+    "positive": "Working well",
+    "info": "Good to know"
+  },
+  "posts": {
+    "title": "Posts",
+    "search": "Search posts",
+    "searchPlaceholder": "Search titles…",
+    "count_one": "{{shown}} of {{total}} posts",
+    "count_other": "{{shown}} of {{total}} posts",
+    "exportCsv": "Export CSV",
+    "empty": "No posts match. Try another search or clear the filters.",
+    "hashtagOpener": "Hashtag opener",
+    "col": {
+      "date": "Date",
+      "type": "Type",
+      "title": "Title",
+      "impressions": "Impressions",
+      "outOfNetwork": "Outside network",
+      "reactions": "Reactions",
+      "comments": "Comments",
+      "reposts": "Reposts",
+      "saves": "Saves",
+      "engagementRate": "Eng. rate",
+      "status": "Status"
+    },
+    "status": {
+      "growing": "Still growing",
+      "viral": "Viral",
+      "breakout": "Breakout"
+    }
+  },
+  "charts": {
+    "showData": "Show data",
+    "expand": "Full screen",
+    "collapse": "Exit full screen"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "description": "Every post as a dot, sized by comments and coloured by type. The line is the median of the last 7 posts; the shaded area is the selected window.",
+    "metricLabel": "Metric",
+    "metric": {
+      "impressions": "Impressions",
+      "reach": "Members reached",
+      "engagements": "Engagements",
+      "engagementRate": "Engagement rate",
+      "outOfNetwork": "Outside your network"
+    },
+    "median": "Median of the last 7 posts",
+    "logScale": "Log scale",
+    "logUnavailable": "Some posts have 0, so this chart uses a linear scale.",
+    "comments": "Comments",
+    "clickHint": "Click to open on LinkedIn",
+    "empty": "No posts to show with these filters.",
+    "chartLabel_one": "Timeline of {{formatted}} post by {{metric}}. The same data is in the table below.",
+    "chartLabel_other": "Timeline of {{formatted}} posts by {{metric}}. The same data is in the table below.",
+    "col": {
+      "date": "Date",
+      "type": "Type",
+      "title": "Title"
+    }
+  },
+  "breakdowns": {
+    "title": "Breakdowns",
+    "tooFew": "too few posts",
+    "col": {
+      "group": "Group",
+      "posts": "Posts",
+      "medianImpressions": "Median impressions",
+      "medianEr": "Median eng. rate",
+      "medianOon": "Median outside network"
+    },
+    "formats": {
+      "title": "Formats",
+      "description": "Median impressions per post type.",
+      "descriptionMedian_one": "Median impressions per post type, compared with your typical post ({{median}} across {{formatted}} post).",
+      "descriptionMedian_other": "Median impressions per post type, compared with your typical post ({{median}} across {{formatted}} posts)."
+    },
+    "oon": {
+      "title": "Reach outside your network",
+      "description": "Posts grouped by the share of impressions from people outside your network."
+    },
+    "rhythm": {
+      "title": "Posting rhythm",
+      "description": {
+        "day": "Impressions per day, with viral posts shown separately, and how many posts you published.",
+        "week": "Impressions per week, with viral posts shown separately, and how many posts you published.",
+        "month": "Impressions per month, with viral posts shown separately, and how many posts you published."
+      },
+      "regular": "Regular posts",
+      "viral": "Viral posts",
+      "impressions": "Impressions",
+      "chartLabel": {
+        "day_one": "Daily impressions and posts over {{count}} day. The same data is in the table below.",
+        "day_other": "Daily impressions and posts over {{count}} days. The same data is in the table below.",
+        "week_one": "Weekly impressions and posts over {{count}} week. The same data is in the table below.",
+        "week_other": "Weekly impressions and posts over {{count}} weeks. The same data is in the table below.",
+        "month_one": "Monthly impressions and posts over {{count}} month. The same data is in the table below.",
+        "month_other": "Monthly impressions and posts over {{count}} months. The same data is in the table below."
+      },
+      "groupBy": "Group by",
+      "period": {
+        "day": "Day",
+        "week": "Week",
+        "month": "Month"
+      },
+      "col": {
+        "day": "Day",
+        "week": "Week starting",
+        "month": "Month"
+      },
+      "postsPer": {
+        "day": "Posts per day",
+        "week": "Posts per week",
+        "month": "Posts per month"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings & data",
+    "cancel": "Cancel",
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "system": "Same as my device",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "thresholds": {
+      "title": "Breakouts and viral posts",
+      "intro": "Breakouts are multiples of your own median impressions, so they fit any audience size. For viral posts you can choose between that and a fixed number.",
+      "breakout": "Breakout at (× your median)",
+      "viral": "Viral at (× your median)",
+      "resolved": "{{multiplier}}× your median ({{median}}) = {{value}}+ impressions",
+      "range": "Between {{min}} and {{max}}",
+      "save": "Save thresholds",
+      "saved": "Thresholds saved.",
+      "error": {
+        "breakout-range": "Breakout must be between {{min}} and {{max}}.",
+        "viral-range": "Viral must be between {{vmin}} and {{vmax}}.",
+        "viral-not-above": "Viral must be higher than breakout.",
+        "not-a-number": "Enter numbers, for example 3 or 2.5.",
+        "impressions-range": "Viral must be a whole number of impressions between {{imin}} and {{imax}}."
+      },
+      "viralMode": "Count a post as viral when it reaches",
+      "modeMultiplier": "a multiple of your median",
+      "modeImpressions": "a fixed number of impressions",
+      "viralImpressions": "Viral at (impressions per post)",
+      "impressionsSource": "Default 15,000: about the top 5 % of personal LinkedIn posts in an analysis of 476,465 posts from Sep 2025 to Feb 2026 (AuthoredUp); the median post had about 840. Many guides call 50,000+ viral, but without data behind it."
+    },
+    "growing": {
+      "label": "Include growing posts by default",
+      "hint": "Posts younger than 7 days are still collecting impressions. You can still switch this per view."
+    },
+    "data": {
+      "title": "Your data",
+      "intro": "Everything is stored only in this browser. Download a backup now and then; clearing site data deletes it.",
+      "backup": "Download backup"
+    },
+    "restore": {
+      "button": "Restore a backup",
+      "title": "Restore this backup",
+      "text_one": "The backup has {{count}} post. How should it be combined with what's here?",
+      "text_other": "The backup has {{count}} posts. How should it be combined with what's here?",
+      "merge": "Merge",
+      "replace": "Replace everything",
+      "mergeHint": "Merge: adds missing posts and keeps the newest numbers for each post. Your settings stay.",
+      "replaceHint": "Replace: deletes what's here and puts the backup in its place, settings included.",
+      "done": "Backup restored: {{new}} new, {{updated}} updated.",
+      "failed": "The backup could not be restored. Nothing was changed.",
+      "errorTitle": "This backup can't be used"
+    },
+    "delete": {
+      "button": "Delete all data",
+      "title": "Delete all data?",
+      "text_one": "This deletes {{formatted}} post, its history, your imports and settings from this browser. It can't be undone.",
+      "text_other": "This deletes {{formatted}} posts, their history, your imports and settings from this browser. It can't be undone.",
+      "backupFirst": "Download backup first",
+      "confirm": "Delete all data",
+      "done": "All data deleted."
+    },
+    "imports": {
+      "title": "Imports",
+      "line": "{{range}} · {{new}} new, {{updated}} updated, {{unchanged}} unchanged"
+    }
+  },
+  "pwa": {
+    "update": "A new version of Post Pulse is ready.",
+    "reload": "Reload",
+    "offlineReady": "Post Pulse now works offline.",
+    "dismiss": "Dismiss"
+  },
+  "insights": {
+    "showPosts": "Show these posts"
+  },
+  "share": {
+    "button": "Share",
+    "title": "Share your LinkedIn story",
+    "alpha": "Alpha",
+    "alphaHint": "An early version: slides and wording may still change.",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "absolute": "Show absolute numbers",
+    "absoluteHint": "Turn this off to show only changes and shares, for example if your numbers are small or you'd rather not publish them.",
+    "previewLabel_one": "Preview of {{count}} slide",
+    "previewLabel_other": "Preview of {{count}} slides",
+    "privacy": "The slides are drawn in your browser and saved as a PDF on your device. Nothing is uploaded. On LinkedIn, add the PDF as a document to post it as a carousel.",
+    "download": "Download PDF",
+    "working": "Creating PDF…",
+    "close": "Close",
+    "failed": "The PDF couldn't be created. Try again, or try another browser.",
+    "pickHint": "Every slide is included, good news and bad. Untick the ones you don't want in the PDF; the closing slide with the app's address always stays.",
+    "slide": {
+      "cover": "Cover",
+      "lesson": "Lesson",
+      "momentum": "Momentum",
+      "recap": "Recap",
+      "closing": "Closing"
+    },
+    "alwaysIncluded": "always included"
+  }
+}

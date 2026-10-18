@@ -1,0 +1,62 @@
+.welcome {
+  display: grid;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ring);
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.promise {
+  margin: calc(-1 * var(--space-3)) 0 0;
+  color: var(--color-text-muted);
+  font-size: 1.0625rem;
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.howTo summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.howTo ol {
+  display: grid;
+  gap: var(--space-4);
+  margin: var(--space-4) 0 0;
+  padding-left: var(--space-6);
+}
+
+.howTo p {
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.shot {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-ring);
+}
+
+/* The home-page shot is a narrow column; keep it from growing huge. */
+li:first-child > .shot {
+  max-width: 18rem;
+}
+
+.sample {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
