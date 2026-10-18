@@ -7,6 +7,7 @@
 
 ### Changes in 1.5 (18 Oct 2026)
 - Public repository `post-pulse`, licence PolyForm Noncommercial 1.0.0: free for personal and noncommercial use, no commercial use (§14). The real-export tests and their expected values move to `docs/data/tests/` (gitignored, §11.4); examples in this spec use synthetic URLs and titles. The live example `lipulse.netlify.app` keeps building from the archived private repository (§10.4).
+- Footer link "Code on GitHub" (§9.1).
 
 ### Changes in 1.4 (17 Oct 2026)
 - Share carousel: **no slide is ever left out**, bad news included (a falling reach shows that the feed is changing). Neutral wording, no claimed causes. A checkbox per slide lets the user leave pages out of the PDF (§9.2 screen 8, TC-SC01–SC09).
@@ -363,6 +364,7 @@ Phase 1 rules. All thresholds and minimum sample sizes live in `src/insights/con
 - Clean, professional, familiar to LinkedIn users: warm light-grey canvas, white cards with 8 px radius and subtle 1 px shadow ring, one blue primary accent, green for positive, red for negative, pill-shaped filter chips, system font stack.
 - **Beta notice**: a "Beta" badge next to the app name and a footer line "Beta version. Post Pulse analyses your post performance export only, not followers, profile visitors or audience data."
 - **Do NOT use the LinkedIn logo, the "in" mark, the LinkedIn name in the app name/logo, or LinkedIn's exact brand assets.** Text may say "for your LinkedIn analytics export". Add footer: "Not affiliated with LinkedIn Corporation."
+- **Source link**: the footer ends with a link "Code on GitHub" to the public repository `https://github.com/Secret-sudo/post-pulse` (opens in a new tab; a plain link, no request, §10.2).
 - Light and dark themes (system default, manual toggle). All colours as CSS custom properties.
 - Post-type colours are consistent across every chart.
 

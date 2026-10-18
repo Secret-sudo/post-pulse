@@ -3,6 +3,7 @@
     "name": "Post Pulse",
     "tagline": "for your LinkedIn analytics export",
     "footer": "Not affiliated with LinkedIn Corporation.",
+    "sourceLink": "Code on GitHub",
     "import": "Import export",
     "skipToContent": "Skip to content",
     "beta": "Beta",
