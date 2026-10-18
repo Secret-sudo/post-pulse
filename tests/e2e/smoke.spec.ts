@@ -13,7 +13,8 @@ test.describe('app shell', () => {
 
     await page.goto('/');
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-    await expect(page.getByText('Not affiliated with LinkedIn Corporation.')).toBeVisible();
+    await expect(page.getByText(/Not affiliated with LinkedIn Corporation\./)).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Code on GitHub' })).toBeVisible();
     await page.waitForLoadState('networkidle');
 
     expect(foreign).toEqual([]);

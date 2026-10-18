@@ -96,6 +96,11 @@
   font-size: 0.875rem;
 }
 
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .tabs {
   display: flex;
   gap: var(--space-1);

@@ -10,6 +10,9 @@ describe('App shell', () => {
     expect(screen.getByText(/your data never leaves your device/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Import LinkedIn export' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Try with sample data' })).toBeInTheDocument();
-    expect(screen.getByText('Not affiliated with LinkedIn Corporation.')).toBeInTheDocument();
+    expect(screen.getByText(/Not affiliated with LinkedIn Corporation\./)).toBeInTheDocument();
+    const source = screen.getByRole('link', { name: 'Code on GitHub' });
+    expect(source).toHaveAttribute('href', 'https://github.com/Secret-sudo/post-pulse');
+    expect(source).toHaveAttribute('rel', 'noopener noreferrer');
   });
 });

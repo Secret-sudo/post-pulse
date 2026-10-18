@@ -17,6 +17,9 @@ import { UpdatePrompt } from './UpdatePrompt.tsx';
 import { useTheme } from './useTheme.ts';
 import styles from './App.module.css';
 
+/** The public source code, linked from the footer (SPEC §9.1). A link, not a request. */
+export const SOURCE_URL = 'https://github.com/Secret-sudo/post-pulse';
+
 function HeaderImport() {
   const { t } = useTranslation();
   const { importFile, busy } = useImport();
@@ -155,7 +158,12 @@ export function App() {
 
         <footer className={styles.footer}>
           <p data-testid="beta-note">{t('app.betaNote')}</p>
-          <p>{t('app.footer')}</p>
+          <p>
+            {t('app.footer')} ·{' '}
+            <a href={SOURCE_URL} target="_blank" rel="noopener noreferrer">
+              {t('app.sourceLink')}
+            </a>
+          </p>
         </footer>
       </div>
       <Toasts />
