@@ -1,0 +1,94 @@
+{
+  "$comment": "Hand-derived from scripts/fixtures/insights.ts (default settings, export date 2026-10-14). Do not regenerate with app code.",
+  "insights": {
+    "file": "syn-insights-en_2026-07-17_2026-10-14.xlsx",
+    "posts": 26,
+    "eligiblePosts": 24,
+    "personalMedian": 300,
+    "breakout": 900,
+    "viral": 3000,
+    "w3": {
+      "posts": 8,
+      "medianImpressions": 200,
+      "breakouts": 0,
+      "zeroCommentPosts": 5
+    },
+    "w2": {
+      "posts": 8,
+      "medianImpressions": 300,
+      "breakouts": 3
+    },
+    "w1": {
+      "posts": 8,
+      "breakouts": 2
+    },
+    "orderedIds": [
+      "reach_decline",
+      "no_breakouts",
+      "hashtag_opener",
+      "weak_format:Repost",
+      "comment_drought",
+      "same_day_split",
+      "oon_shift",
+      "strong_format:Video",
+      "oon_driver",
+      "concentration",
+      "over_posting",
+      "resonance_holds",
+      "growing_posts"
+    ],
+    "severities": {
+      "reach_decline": "critical",
+      "no_breakouts": "warning",
+      "hashtag_opener": "warning",
+      "weak_format:Repost": "warning",
+      "comment_drought": "warning",
+      "strong_format:Video": "positive",
+      "oon_driver": "info",
+      "concentration": "info",
+      "resonance_holds": "info",
+      "over_posting": "info",
+      "growing_posts": "info",
+      "same_day_split": "warning",
+      "oon_shift": "warning"
+    },
+    "titles": {
+      "reach_decline": "Your typical post reaches fewer people: 300 → 200 (−33 %).",
+      "no_breakouts": "No breakout post in the last 30 days (3 in the 30 before).",
+      "comment_drought": "63 % of recent posts got no comments.",
+      "weak_format:Repost": "Reposts reach 67 % fewer people than your typical post.",
+      "strong_format:Video": "Videos reach 300 % more people than your typical post.",
+      "concentration": "One post produced 68 % of all impressions.",
+      "growing_posts": "2 posts are still collecting impressions and are excluded from comparisons.",
+      "same_day_split": "Posts that share a day with another post reach 33 % fewer people.",
+      "oon_shift": "Fewer of your impressions come from outside your network: 30 % → 20 %."
+    },
+    "effectSizes": {
+      "reach_decline": 0.3333,
+      "no_breakouts": 1,
+      "hashtag_opener": 0.6667,
+      "weak_format:Repost": 0.6667,
+      "comment_drought": 0.625,
+      "strong_format:Video": 3,
+      "oon_driver": 1,
+      "concentration": 0.678,
+      "resonance_holds": 0.3333,
+      "over_posting": 0.3,
+      "growing_posts": 0.02,
+      "same_day_split": 0.3333,
+      "oon_shift": 0.1
+    },
+    "overviewIds": [
+      "reach_decline",
+      "no_breakouts",
+      "hashtag_opener",
+      "comment_drought",
+      "strong_format:Video"
+    ]
+  },
+  "quiet": {
+    "file": "syn-quiet-en_2026-07-17_2026-10-14.xlsx",
+    "posts": 24,
+    "orderedIds": ["growing_posts"]
+  }
+}
