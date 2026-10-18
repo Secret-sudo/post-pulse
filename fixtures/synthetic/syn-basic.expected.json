@@ -1,0 +1,12 @@
+{
+  "$comment": "Hand-derived from scripts/fixtures/basic.ts. Do not regenerate with app code.",
+  "file": "syn-basic-en_2026-07-17_2026-10-14.xlsx",
+  "posts": 40,
+  "rangeStart": "2026-07-17",
+  "rangeEnd": "2026-10-14",
+  "earliestPost": "2026-07-18",
+  "latestPost": "2026-10-04",
+  "totalImpressions": 15800,
+  "postsPerType": 5,
+  "summary": { "postsNew": 40, "postsUpdated": 0, "postsUnchanged": 0 }
+}

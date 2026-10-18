@@ -1,0 +1,62 @@
+{
+  "$comment": "Hand-derived from the rules in scripts/fixtures/merge.ts. Do not regenerate with app code.",
+  "a": {
+    "file": "syn-merge-a_2026-07-01_2026-09-30.xlsx",
+    "posts": 30,
+    "rangeStart": "2026-07-01",
+    "rangeEnd": "2026-09-30",
+    "earliestPost": "2026-07-01",
+    "latestPost": "2026-09-26",
+    "totalImpressions": 7350
+  },
+  "b": {
+    "file": "syn-merge-b_2026-07-15_2026-10-14.xlsx",
+    "posts": 29,
+    "rangeStart": "2026-07-15",
+    "rangeEnd": "2026-10-14",
+    "totalImpressions": 9850
+  },
+  "aThenB": {
+    "importB": { "postsNew": 4, "postsUpdated": 10, "postsUnchanged": 15 },
+    "totalPosts": 34,
+    "totalSnapshots": 59,
+    "totalImpressions": 10450,
+    "droppedPostIds": [
+      "7400000000000001000",
+      "7400000000000001001",
+      "7400000000000001002",
+      "7400000000000001003",
+      "7400000000000001004"
+    ],
+    "droppedImpressions": [100, 110, 120, 130, 140],
+    "updatedExample": {
+      "postId": "7400000000000001005",
+      "impressions": 200,
+      "comments": 2,
+      "metricsAsOf": "2026-10-14"
+    },
+    "unchangedExample": {
+      "postId": "7400000000000001029",
+      "impressions": 390,
+      "comments": 1,
+      "metricsAsOf": "2026-10-14"
+    },
+    "latestExportDate": "2026-10-14"
+  },
+  "bThenA": {
+    "importA": { "postsNew": 5, "postsUpdated": 0, "postsUnchanged": 25 },
+    "totalPosts": 34,
+    "totalSnapshots": 59,
+    "totalImpressions": 10450,
+    "sharedExample": {
+      "postId": "7400000000000001005",
+      "impressions": 200,
+      "metricsAsOf": "2026-10-14"
+    }
+  },
+  "otherAuthor": {
+    "file": "syn-other-author_2026-09-01_2026-10-14.xlsx",
+    "posts": 5,
+    "authorSlug": "someoneelse"
+  }
+}
