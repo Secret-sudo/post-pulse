@@ -1,0 +1,117 @@
+/* Design tokens (SPEC §9.1). Every colour is a custom property; themes swap values only. */
+:root {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --radius-card: 8px;
+  --radius-pill: 999px;
+
+  --color-canvas: #f4f2ee;
+  --color-surface: #ffffff;
+  --color-text: #1d2226;
+  --color-text-muted: #5e6670;
+  --color-border: #dcdad5;
+  --color-accent: #0a66c2;
+  --color-accent-contrast: #ffffff;
+  --color-positive: #057642;
+  --color-negative: #b42318;
+  --color-focus: #0a66c2;
+  --color-accent-hover: #004182;
+  --color-accent-soft: #e8f1fb;
+  --color-hover: rgb(0 0 0 / 0.05);
+  --color-warning: #915907;
+  --shadow-ring: 0 0 0 1px rgb(0 0 0 / 0.08), 0 2px 3px rgb(0 0 0 / 0.04);
+  /* Post-type colours, consistent across every chart (SPEC §9.1). */
+  --type-image: #0a66c2;
+  --type-video: #c2410c;
+  --type-repost: #7c3aed;
+  --type-text: #0f766e;
+  --type-article: #a16207;
+  --type-document: #be185d;
+  --type-poll: #4d7c0f;
+  --type-celebration: #b91c1c;
+  --type-other: #6b7280;
+
+  /* Share carousel (SPEC §9.2 screen 8): its own light and dark palettes, chosen
+     in the share dialog independently of the app theme, so they never swap. */
+  --share-light-bg: #f6f5f2;
+  --share-light-card: #ffffff;
+  --share-light-text: #16191d;
+  --share-light-muted: #5e6670;
+  --share-light-line: #dad7d0;
+  --share-light-accent: #2f6fb0;
+  --share-light-positive: #2e7d4f;
+  --share-light-negative: #b03a2e;
+  --share-light-bar: #c9d8ea;
+  --share-dark-bg: #111418;
+  --share-dark-card: #1b2027;
+  --share-dark-text: #f1f2f4;
+  --share-dark-muted: #a3abb5;
+  --share-dark-line: #2e3540;
+  --share-dark-accent: #7fb2e5;
+  --share-dark-positive: #6cc08b;
+  --share-dark-negative: #f08a7e;
+  --share-dark-bar: #2f4b69;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-canvas: #12161a;
+    --color-surface: #1d2226;
+    --color-text: #e9eaeb;
+    --color-text-muted: #a6adb4;
+    --color-border: #38434f;
+    --color-accent: #71b7fb;
+    --color-accent-contrast: #0b1520;
+    --color-positive: #4fc28a;
+    --color-negative: #f97066;
+    --color-focus: #71b7fb;
+    --color-accent-hover: #a8d4ff;
+    --color-accent-soft: rgb(113 183 251 / 0.14);
+    --color-hover: rgb(255 255 255 / 0.06);
+    --color-warning: #f5b451;
+    --shadow-ring: 0 0 0 1px rgb(255 255 255 / 0.1);
+    --type-image: #71b7fb;
+    --type-video: #fb923c;
+    --type-repost: #c4b5fd;
+    --type-text: #5eead4;
+    --type-article: #facc15;
+    --type-document: #f9a8d4;
+    --type-poll: #bef264;
+    --type-celebration: #fca5a5;
+    --type-other: #9ca3af;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-canvas: #12161a;
+  --color-surface: #1d2226;
+  --color-text: #e9eaeb;
+  --color-text-muted: #a6adb4;
+  --color-border: #38434f;
+  --color-accent: #71b7fb;
+  --color-accent-contrast: #0b1520;
+  --color-positive: #4fc28a;
+  --color-negative: #f97066;
+  --color-focus: #71b7fb;
+  --color-accent-hover: #a8d4ff;
+  --color-accent-soft: rgb(113 183 251 / 0.14);
+  --color-hover: rgb(255 255 255 / 0.06);
+  --color-warning: #f5b451;
+  --shadow-ring: 0 0 0 1px rgb(255 255 255 / 0.1);
+  --type-image: #71b7fb;
+  --type-video: #fb923c;
+  --type-repost: #c4b5fd;
+  --type-text: #5eead4;
+  --type-article: #facc15;
+  --type-document: #f9a8d4;
+  --type-poll: #bef264;
+  --type-celebration: #fca5a5;
+  --type-other: #9ca3af;
+}
